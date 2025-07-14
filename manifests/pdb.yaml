@@ -1,0 +1,13 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: air-workflow
+  labels:
+    app.kubernetes.io/name: air-workflow
+    app.kubernetes.io/part-of: air-workflow-project
+    kubernetes.azure.com/generator: devhub
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: air-workflow
