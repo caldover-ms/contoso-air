@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: air-workflow
-  namespace: sample-app-namespace-1752531036662
+  name: air-workflow2
+  namespace: sample-app-namespace-1752531442166
   labels:
-    app.kubernetes.io/name: air-workflow
+    app.kubernetes.io/name: air-workflow2
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app.kubernetes.io/name: air-workflow
+    app.kubernetes.io/name: air-workflow2
   ports:
     - protocol: TCP
       port: 3000
