@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: air-workflow1-config
+  namespace: sample-app-namespace-1752592910908
+  labels:
+    app.kubernetes.io/name: air-workflow1
+    kubernetes.azure.com/generator: devhub
+data:
