@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-workflow-config
+  namespace: sample-app-namespace-1752794415339
+  labels:
+    app.kubernetes.io/name: demo-workflow
+    kubernetes.azure.com/generator: devhub
+data:
