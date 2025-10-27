@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ca-workflow2
+  namespace: sample-app-namespace-1761600555160
+  labels:
+    app.kubernetes.io/name: ca-workflow2
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: ca-workflow2
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
